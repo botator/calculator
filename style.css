@@ -77,10 +77,10 @@ button{
     
 }
 .close:hover{
-opacity: 0.7;
+
 background-color: red;
 }
 .comb:hover{
-    opacity: 0.7;
+    background-color: rgb(115, 117, 121);
 
 }
