@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>calc</title>
+</head>
+<body>
+    <button onclick="visibl()" class="imgb">
+        <img src="calca.png" alt="">
+    </button>
+    <div id="nagydb" class="nagydb">
+        
+        <div style="display: flex;flex-direction: row; justify-content: right;">
+            <p style="color: white; margin: 2px; margin-right: auto;">Calculator</p>
+            <button class="icons comb">-</button>
+            <button class="icons comb">🗖</button>
+            <button onclick="visibl()"  class="icons close">X</button>
+            </div>
+        <div style="height: 100px;margin-bottom: 3px;">
+            <h4 class="szamolt" id="szamolt"></h4>
+            <h1 class="szamter" id="szamter">0</h1>
+        </div>
+        <div class="calcbox">
+            <button class="grid-item masgomb" onclick="getCount('C')">C</button>
+            <button class="grid-item masgomb" onclick="getCount('CE')">CE</button>
+            <button class="grid-item masgomb" onclick="getCount('x2')">x<sup>2</sup></button>
+            <button class="grid-item masgomb" onclick="getCount('/')">÷</button>
+            <button id="btnnumbersev" onclick="getValue('7')" value="7" class="grid-item szamok" >7</button>
+            <button id="btnnumbereig" onclick="getValue('8')" value="8" class="grid-item szamok">8</button>
+            <button id="btnnumbernin" onclick="getValue('9')" value="9" class="grid-item szamok">9</button>
+            <button class="grid-item masgomb" onclick="getCount('*')">x</button>
+            <button id="btnnumberfou" onclick="getValue('4')" value="4" class="grid-item szamok">4</button>
+            <button id="btnnumberfiv" onclick="getValue('5')" value="5" class="grid-item szamok">5</button>
+            <button id="btnnumbersix" onclick="getValue('6')" value="6" class="grid-item szamok">6</button>
+            <button class="grid-item masgomb" onclick="getCount('-')">-</button>
+            <button id="btnnumberone" onclick="getValue('1')" value="1" class="grid-item szamok">1</button>
+            <button id="btnnumbertwo" onclick="getValue('2')" value="2" class="grid-item szamok">2</button>
+            <button id="btnnumberthr" onclick="getValue('3')" value="3" class="grid-item szamok">3</button>
+            <button class="grid-item masgomb" onclick="getCount('+')">+</button>
+            <button class="grid-item szamok">±</button>
+            <button id="btnnumberzer" onclick="getValue('0')" value="0" class="grid-item szamok">0</button>
+            <button class="grid-item szamok" onclick="getValue('.')">.</button>
+            <button class="grid-item equal" onclick="getCount('=')">=</button>
+        </div>
+    </div>
+<script src="js.js"></script>
+</body>
+</html>
